@@ -1,0 +1,18 @@
+\begin{table}
+    \centering
+    \caption{UCI Adult Data Set sem pré-processamento.}
+    \label{table:scoresSemPP}
+    \resizebox{0.85\textwidth}{!}{
+    \begin{tabular}{lrrrrrrr}
+    \toprule
+        Algoritmo de classificação & Acurácia sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial  \\
+        \midrule
+        Árvore de Decisão          &  0.817(0.007) &   0.793(0.008) &   0.826(0.005)\\
+        Regressão Logística        & 0.825(0.004) & 0.799(0.005) & 0.801(0.007)\\
+        Naive Bayes                & 0.808(0.010)  & 0.801(0.009) & 0.788(0.019)\\
+        Naive Bayes + Isotônico    & 0.820(0.004) & 0.813(0.005) & 0.797(0.004)\\
+        Naive Bayes + Sigmoidal    & 0.801(0.005) & 0.796(0.004) & 0.762(0.005)\\
+        \bottomrule
+        \end{tabular}
+    }
+    \end{table}

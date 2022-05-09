@@ -1,0 +1,19 @@
+\begin{table}
+    \centering
+    \caption{Dataset de Reincidência Criminal sem pré-processamento.}
+    \label{table:recindSemPP}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrl}
+    \toprule
+    Algoritmo de Classificação  & Acurácia sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial  \\
+    \midrule
+    Árvore de Decisão           &  0.676 (0.011) &    0.662 (0.008)   &      0.659 (0.010)   \\
+    Naive Bayes                 &  0.690 (0.017) &    0.686 (0.014)   &      0.684(0.014)        \\
+    Naive Bayes + Isotonic      &  0.699 (0.009) &    0.693 (0.013)   &      0.692 (0.001) \\
+    Naive Bayes + Sigmoid       &  0.700 (0.011) &    0.692 (0.010)   &      0.686(0.006)  \\
+    Regressão Logística         &  0.708 (0.013) &    0.701 (0.016)   &      0.698(0.010)  \\
+    
+    \bottomrule
+    \end{tabular}
+    }
+    \end{table}

@@ -1,0 +1,55 @@
+Discriminação do Logistic = +0.002
+[0.72857143 0.8       ]
+Discriminação do Naive Bayes = +0.018
+[0.78571429 0.73333333]
+Discriminação do Naive Bayes + Isotonic = +0.060
+[0.75714286 0.76666667]
+Discriminação do Naive Bayes + Sigmoid = +0.018
+[0.75714286 0.66666667]
+Discriminação do Decision Tree Classifier = -0.028
+[0.57142857 0.6       ]
+
+Discriminação do Logistic = -1.000
+[0.72857143 0.3       ]
+Discriminação do Naive Bayes = -1.000
+[0.72857143 0.3       ]
+Discriminação do Naive Bayes + Isotonic = -0.986
+[0.72857143 0.33333333]
+Discriminação do Naive Bayes + Sigmoid = -0.972
+[0.71428571 0.33333333]
+Discriminação do Decision Tree Classifier = -0.972
+[0.72857143 0.36666667]
+
+Discriminação do Logistic = +0.107
+[0.68571429 0.83333333]
+Discriminação do Naive Bayes = +0.073
+[0.75714286 0.8       ]
+Discriminação do Naive Bayes + Isotonic = -0.403
+[0.67142857 0.76666667]
+Discriminação do Naive Bayes + Sigmoid = -0.786
+[0.81428571 0.3       ]
+Discriminação do Decision Tree Classifier = +0.016
+[0.6        0.53333333]
+
+
+\begin{table}
+    \centering
+    \caption{Dataset de Reincidência Criminal sem pré-processamento.}
+    \subcaption{Acurácia por classe (positiva e negativa)}
+    \label{table:recindSemPP}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrl}
+    \toprule
+   Algoritmo de Classificação   &  Acurácia sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial  \\
+   
+    \midrule
+    Regressão Logística          &      [0.72857143 0.8       ] &   [0.72857143 0.3       ]   &     [0.68571429 0.83333333]  \\
+    Naive Bayes                 &        [0.78571429 0.73333333] &   [0.72857143 0.3       ]   &    [0.75714286 0.8       ]        \\
+    Naive Bayes + Isotônico     &         [0.75714286 0.76666667] &  [0.72857143 0.33333333]  &     [0.67142857 0.76666667] \\
+    Naive Bayes + Sigmoidal     &       [0.75714286 0.66666667] &   [0.71428571 0.33333333]  &     [0.81428571 0.3       ] \\
+    Árvore de decisão            &       [0.57142857 0.6       ] &  [0.72857143 0.36666667]   &     [0.6        0.53333333] \\
+        
+    \bottomrule
+    \end{tabular}
+    }
+    \end{table}

@@ -1,0 +1,17 @@
+\begin{table}
+\centering
+\caption{Aplicado Amostragem pref}
+\label{Aplicado Amostragem pref 2}
+\begin{tabular}{lrrrrrrrl}
+\toprule
+{} &  Brier  loss &  Log loss &  Accuracy  &  Precision  &  Recall  &    F1  &  Roc auc  &         Conjunto de dados \\
+Classifier               &              &           &            &             &          &        &           &                           \\
+\midrule
+Logistic                 &        0.218 &     0.627 &      0.665 &       0.466 &    0.616 &  0.531 &     0.652 &  Aplicado Amostragem pref \\
+Naive Bayes              &        0.244 &     0.718 &      0.627 &       0.429 &    0.644 &  0.515 &     0.632 &  Aplicado Amostragem pref \\
+Naive Bayes + Isotonic   &        0.244 &     0.679 &      0.436 &       0.337 &    0.863 &  0.485 &     0.555 &  Aplicado Amostragem pref \\
+Naive Bayes + Sigmoid    &        0.259 &     0.712 &      0.581 &       0.195 &    0.116 &  0.146 &     0.452 &  Aplicado Amostragem pref \\
+Decision Tree Classifier &        0.298 &     6.579 &      0.642 &       0.438 &    0.582 &  0.500 &     0.625 &  Aplicado Amostragem pref \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}
+    \centering
+    \caption{Acurácia por grupo e classe dos classificadores no Data Set de Reincidência Criminal Juvenil.}
+    \label{table:accGroupClassRecind}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{llrrrrr}
+    \toprule
+    Algoritmo de classificação &          Grupo &  Sem pré-processamento                            &  Acurácia após o massageamento & Acurácia após a amostragem preferencial   \\
+                               &                &  [positiva e negativa]                            &      [positiva e negativa]   &      [positiva e negativa]   \\
+    \midrule
+    Árvore de Decisão        &  Desfavorecido &   [0.453655 (0.131817)  0.774349 (0.052406)]    &  [0.450787 (0.065875)  0.592656 (0.076194)]   & [0.597108 (0.115145)  0.578014 (0.071067)]\\
+    Árvore de Decisão        &     Favorecido &   [0.562141 (0.046565)  0.577725 (0.030229)]    &  [0.533050 (0.057422)  0.624610 (0.034103)]   & [0.555317 (0.041180)  0.628634 (0.031105)]\\
+    Naive Bayes              &  Desfavorecido &   [0.065245 (0.077426)  0.948021 (0.030564)]    &  [0.566027 (0.178134)  0.619787 (0.115679)]  & [0.854884 (0.191725)  0.225997 (0.253064)]\\
+    Naive Bayes              &     Favorecido &   [0.697159 (0.050759)  0.500722 (0.047825)]    &  [0.670199 (0.069014)  0.551148 (0.067602)]  & [0.502181 (0.349956)  0.622469 (0.259204)]\\
+    Naive Bayes + Isotonic   &  Desfavorecido &   [0.051911 (0.062407)  0.941617 (0.032176)]    &  [0.441350 (0.229217)  0.722500 (0.115065)]  & [0.981820 (0.029469)   0.088559 (0.039197)]\\
+    Naive Bayes + Isotonic   &     Favorecido &   [0.746617 (0.055816)  0.458091 (0.062007)]    &  [0.754795 (0.044618)  0.466857 (0.045801)]  & [0.850353 (0.035054)   0.331700(0.029573)]\\
+    Naive Bayes + Sigmoid    &  Desfavorecido &   [0.071911 (0.086964)  0.951894 (0.031351)]    &  [0.623305 (0.104106)  0.559331 (0.087529)]  & [0.969231 (0.074315)   0.019801 (0.042758)]\\
+    Naive Bayes + Sigmoid    &     Favorecido &   [0.672809 (0.022403)  0.520524 (0.017758)]    &  [0.624537 (0.023940)  0.597748 (0.016971)]  & [0.038415 (0.061930)  0.925498 (0.137916)]\\
+    Regressão Logística      &  Desfavorecido &   [0.144875 (0.107861)  0.914614 (0.035838)]    &  [0.706695 (0.131585)  0.503481 (0.081027)]  & [0.705669 (0.114802)  0.517338 (0.085908)]\\
+    Regressão Logística      &     Favorecido &   [0.696350 (0.034286)  0.564140 (0.017896)]    &  [0.609572 (0.043389)  0.652309 (0.033896)]  & [0.597566 (0.035747)  0.670614 (0.026043)]\\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}

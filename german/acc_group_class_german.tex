@@ -1,0 +1,96 @@
+\begin{table}
+    \centering
+    \caption{Acurácia por grupo e classe dos classificadores no German Adult Data Set.}
+    \label{table:accGroupClassGerman}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{llrrrrr}
+    \toprule
+    Algoritmo de classificação &          Grupo &  Sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial   \\
+                               &                &  [positiva e negativa]  &      [positiva e negativa]   &      [positiva e negativa]   \\
+    \midrule
+    Árvore de Decisão &  Desfavorecido &   [0.646026 (0.077548)  0.626499 (0.118586)]    &      [0.983217 (0.035535)   0.023238 (0.024815)]   & [0.623586 (0.187074)  0.615798 (0.153226)]\\
+    Árvore de Decisão &     Favorecido &   [0.562960 (0.089948)  0.680686 (0.054949)]     &      [0.072777 (0.047882)  0.989775 (0.014465)]   & [0.639795 (0.102389)  0.645634 (0.033924)]\\
+    Naive Bayes              &  Desfavorecido &   [0.774546 (0.117553)  0.683893 (0.098625)]    &      [1.000000 (0.0)  0.0 (0.0)]              & [0.853295 (0.161384)  0.449151 (0.230367)]\\
+    Naive Bayes              &     Favorecido &   [0.678267 (0.097096)  0.709287 (0.072838)]    &      [0.010962 (0.028344)  0.997318 (0.006957)]   & [0.546455 (0.241418)  0.756894 (0.117287)]\\
+    Naive Bayes + Isotonic   &  Desfavorecido &   [0.781953 (0.122499)  0.694503 (0.099705)]    &      [1.000000 (0.0)  0.0 (0.0)]                  & [0.935092 (0.111079)  0.332556 (0.156656)]\\
+    Naive Bayes + Isotonic   &     Favorecido &   [0.646572 (0.111314)  0.730969 (0.085210)]    &      [0.032885 (0.042280)  0.996036 (0.008361)]   & [0.660528 (0.148730)  0.695636 (0.070007)]\\
+    Naive Bayes + Sigmoid    &  Desfavorecido &   [0.768065 (0.121092)  0.690658 (0.101913)]    &      [1.000000 (0.0)  0.0 (0.0)]                  & [0.935092 (0.111079)  0.290113 (0.109102)]\\
+    Naive Bayes + Sigmoid    &     Favorecido &   [0.689983 (0.095096)  0.711200 (0.064218)]    &      [0.004348 (0.013749)  0.997959 (0.006454)]   & [0.255779 (0.129074)  0.892108 (0.075269)]\\
+    Regressão Logística      &  Desfavorecido &   [0.748088 (0.116739)  0.664050 (0.091479)]    &      [1.0 (0.0) 0.0 (0.0)]                        &  [0.681188 (0.116876)  0.790610 (0.060513)]\\
+    Regressão Logística      &     Favorecido &   [0.690216 (0.113561)  0.722616 (0.063221)]    &      [0.03104 (0.02775)  0.994113 (0.013120)]   & [0.740466 (0.099324)  0.671765 (0.066635)]\\
+    \bottomrule
+    \end{tabular}
+    }
+\end{table}
+
+
+\begin{table}
+    \centering
+    \caption{Conjunto bruto}
+    \label{Conjunto bruto 3}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    {} &          Grupo &  Acurácia Classe positiva &  Acurácia classe negativa &  VN  &  VP + VN  &  Acurácia \\
+    Classifier               &                &                           &                           &      &           &           \\
+    \midrule
+    Logistic                 &  Desfavorecido &                  [0.777778  0.708333] &   17 &        24 &  0.727273 \\
+    Logistic                 &     Favorecido &                  [0.476190  0.695652] &   32 &        42 &  0.626866 \\
+    Naive Bayes              &  Desfavorecido &                  [0.777778  0.666667] &   16 &        23 &  0.696970 \\
+    Naive Bayes              &     Favorecido &                  [0.571429  0.760870] &   35 &        47 &  0.701493 \\
+    Naive Bayes + Isotonic   &  Desfavorecido &                  [0.777778  0.708333] &   17 &        24 &  0.727273 \\
+    Naive Bayes + Isotonic   &     Favorecido &                  [0.523810  0.760870] &   35 &        46 &  0.686567 \\
+    Naive Bayes + Sigmoid    &  Desfavorecido &                  [0.777778  0.666667] &   16 &        23 &  0.696970 \\
+    Naive Bayes + Sigmoid    &     Favorecido &                  [0.571429  0.760870] &   35 &        47 &  0.701493 \\
+    Decision Tree Classifier &  Desfavorecido &                  [0.555556  0.583333] &   14 &        19 &  0.575758 \\
+    Decision Tree Classifier &     Favorecido &                  [0.666667  0.586957] &   27 &        41 &  0.611940 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\begin{table}
+    \centering
+    \caption{Aplicado massageamento}
+    \label{Aplicado massageamento 4}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    {} &          Grupo &  Acurácia Classe positiva &  Acurácia classe negativa &  VN  &  VP + VN  &  Acurácia \\
+    Classifier               &                &                           &                           &      &           &           \\
+    \midrule
+    Logistic                 &  Desfavorecido &                  [1.000000  0.0] &    0 &         9 &  0.272727 \\
+    Logistic                 &     Favorecido &                  [0.047619  1.0] &   46 &        47 &  0.701493 \\
+    Naive Bayes              &  Desfavorecido &                  [1.000000  0.0] &    0 &         9 &  0.272727 \\
+    Naive Bayes              &     Favorecido &                  [0.000000  1.0] &   46 &        46 &  0.686567 \\
+    Naive Bayes + Isotonic   &  Desfavorecido &                  [1.000000  0.0] &    0 &         9 &  0.272727 \\
+    Naive Bayes + Isotonic   &     Favorecido &                  [0.047619  1.0] &   46 &        47 &  0.701493 \\
+    Naive Bayes + Sigmoid    &  Desfavorecido &                  [1.000000  0.0] &    0 &         9 &  0.272727 \\
+    Naive Bayes + Sigmoid    &     Favorecido &                  [0.047619  1.0] &   46 &        47 &  0.701493 \\
+    Decision Tree Classifier &  Desfavorecido &                  [1.000000  0.0] &    0 &         9 &  0.272727 \\
+    Decision Tree Classifier &     Favorecido &                  [0.095238  1.0] &   46 &        48 &  0.716418 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+    
+\begin{table}
+    \centering
+    \caption{Aplicado Amostragem pref}
+    \label{Aplicado Amostragem pref 5}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    {} &          Grupo &  Acurácia Classe positiva &  Acurácia classe negativa &  VN  &  VP + VN  &  Acurácia \\
+    Classifier               &                &                           &                           &      &           &           \\
+    \midrule
+    Logistic                 &  Desfavorecido &                  [0.666667  0.750000] &   18 &        24 &  0.727273 \\
+    Logistic                 &     Favorecido &                  [0.619048  0.673913] &   31 &        44 &  0.656716 \\
+    Naive Bayes              &  Desfavorecido &                  [0.555556  0.583333] &   14 &        19 &  0.575758 \\
+    Naive Bayes              &     Favorecido &                  [0.619048  0.673913] &   31 &        44 &  0.656716 \\
+    Naive Bayes + Isotonic   &  Desfavorecido &                  [1.000000  0.208333] &    5 &        14 &  0.424242 \\
+    Naive Bayes + Isotonic   &     Favorecido &                  [0.523810  0.673913] &   31 &        42 &  0.626866 \\
+    Naive Bayes + Sigmoid    &  Desfavorecido &                  [1.000000  0.166667] &    4 &        13 &  0.393939 \\
+    Naive Bayes + Sigmoid    &     Favorecido &                  [0.047619  0.804348] &   37 &        38 &  0.567164 \\
+    Decision Tree Classifier &  Desfavorecido &                  [0.888889  0.583333] &   14 &        22 &  0.666667 \\
+    Decision Tree Classifier &     Favorecido &                  [0.571429  0.630435] &   29 &        41 &  0.611940 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+    

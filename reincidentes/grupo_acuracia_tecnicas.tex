@@ -1,0 +1,21 @@
+\begin{table}
+    \centering
+    \caption{Acurácia por grupo dos classificadores no de Data Set de Reincidência Criminal.}
+    \label{table:grupoRecindCompleto}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    Classificador           &  Grupo        &  Acurácia sem pré-processamento    &  Acurácia após o massageamento  &  Acurácia após a amostragem preferencial  \\    
+    \midrule
+    Árvore de Decisão       &  Desfavorecido &    0.713252 (0.047777)            &  0.566738 (0.061615)            &  0.581883 (0.058330)   \\
+    Árvore de Decisão       &     Favorecido &     0.572439 (0.019429)           &  0.593954 (0.019192)             & 0.604060 (0.018415)   \\    
+    Naive Bayes              &  Desfavorecido &    0.781631 (0.026306)          &  0.609670 (0.082042)              &  0.344618 (0.174583)   \\
+    Naive Bayes              &     Favorecido &   0.566300 (0.019998)             & 0.590968 (0.025325)             &  0.582254 (0.070648)   \\
+    Naive Bayes + Isotônico   &  Desfavorecido &   0.774250 (0.027418)         &   0.669258 (0.069520)               &   0.256691 (0.028335)   \\
+    Naive Bayes + Isotônico   &     Favorecido &     0.554270 (0.030021)         &  0.563048 (0.021902)              &  0.504877 (0.023810)    \\
+    Naive Bayes + Sigmoidal    &  Desfavorecido &    0.785829 (0.026530)        &  0.571465 (0.081629)              &  0.198757 (0.024972)     \\
+    Naive Bayes + Sigmoidal    &     Favorecido &    0.571425 (0.008854)        &  0.606745 (0.013897)              & 0.629046 (0.071321)      \\
+    Regressão Logística        &  Desfavorecido &   0.769627 (0.026878)                   &   0.541881 (0.079644)        & 0.553029 (0.079390)      \\
+    Regressão Logística        &     Favorecido &   0.608294 (0.014820)                   &   0.638246 (0.015962)            & 0.646290 (0.012106)       \\
+    \bottomrule
+    \end{tabular}
+    \end{table}

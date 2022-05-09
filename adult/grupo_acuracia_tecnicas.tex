@@ -1,0 +1,21 @@
+\begin{table}
+    \centering
+    \caption{Acurácia por grupo dos classificadores no UCI Adult Data Set.}
+    \label{table:grupoAdultCompleto}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    Classificador           &  Grupo        &  Acurácia sem pré-processamento    &  Acurácia após o massageamento  &  Acurácia após a amostragem preferencial  \\    
+    \midrule
+    Árvore de Decisão       &  Desfavorecido &  0.853170       (0.003979)       &     0.698023 (0.004838)       &  0.834048  (0.004327)  \\
+    Árvore de Decisão       &     Favorecido &   0.726989    (0.007367)          &  0.789800   (0.010227)           & 0.785971 (0.005597)       \\    
+    Naive Bayes              &  Desfavorecido &   0.886806     (0.004969)         &   0.863074 (0.030072)        & 0.742510 (0.176262)   \\
+    Naive Bayes              &     Favorecido &    0.745849 (0.040574)           & 0.743118    (0.009726)         & 0.733597 (0.035474)   \\
+    Naive Bayes + Isotônico   &  Desfavorecido &   0.881134 (0.002469)           &  0.825692 (0.011883)            &   0.529463 (0.014923)   \\
+    Naive Bayes + Isotônico   &     Favorecido &    0.694107 (0.004723)           &  0.730707 (0.000853)            & 0.690671 (0.010438)    \\
+    Naive Bayes + Sigmoidal    &  Desfavorecido &    0.887552 (0.001402)          &  0.875653 (0.002726)            & 0.801818 (0.100091)    \\
+    Naive Bayes + Sigmoidal    &     Favorecido &     0.778240 (0.001206)        &  0.749835  (0.000813)           &  0.746889 (0.018630)     \\
+    Regressão Logística        &  Desfavorecido &    0.863452 (0.001983)       &   0.620342 (0.005719)           &  0.701581 (0.005879)     \\
+    Regressão Logística        &     Favorecido &  0.724196 (0.001818)         &  0.747497  (0.000255)             & 0.765231 (0.003190)      \\
+    \bottomrule
+    \end{tabular}
+    \end{table}

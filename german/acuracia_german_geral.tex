@@ -1,0 +1,16 @@
+\begin{table}
+    \centering
+    \caption{UCI GermanCredit Data Set sem pré-processamento.}
+    \label{table:germanscoresSemPP}
+    \begin{tabular}{lrrrrrrrl}
+    \toprule
+    Algoritmo de classificação  & Acurácia sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial  \\
+        \midrule
+        Árvore de Decisão       & 0.701(0.023)      &   0.612 (0.050)   &   0.701 (0.030) \\
+        Naive Bayes             &   0.739(0.044)    &   0.608 (0.049)   &   0.715(0.036) \\
+        Naive Bayes + Isotônico &  0.745(0.035)     &   0.608 (0.051)   &   0.718 ( 0.023)\\
+        Naive Bayes + Sigmoidal & 0.743(0.032)      &   0.608 (0.051)   &    0.702 (0.013)\\
+        Regressão Logística     & 0.763(0.038)      &   0.609 (0.050)   &  0.748 (0.042)\\
+    \bottomrule
+    \end{tabular}
+    \end{table}

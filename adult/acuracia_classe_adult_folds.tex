@@ -1,0 +1,54 @@
+Discriminação do Logistic = +0.352
+[0.777589   0.76358072]
+Discriminação do Naive Bayes = +0.133
+[0.9342233 0.4310125]
+Discriminação do Naive Bayes + Isotonic = +0.446
+[0.74991909 0.80158123]
+Discriminação do Naive Bayes + Sigmoid = +0.250
+[0.87928803 0.6062229 ]
+Discriminação do Decision Tree Classifier = +0.247
+[0.78050162 0.76562102]
+
+Discriminação do Logistic = -0.094
+[0.7316343  0.62764601]
+Discriminação do Naive Bayes = +0.066
+[0.95040453 0.30986993]
+Discriminação do Naive Bayes + Isotonic = +0.246
+[0.7973301  0.69752614]
+Discriminação do Naive Bayes + Sigmoid = +0.103
+[0.92475728 0.39989799]
+Discriminação do Decision Tree Classifier = +0.002
+[0.78462783 0.67686815]
+
+Discriminação do Logistic = -0.022
+[0.76990291 0.66794185]
+Discriminação do Naive Bayes = +0.112
+[0.94514563 0.43279776]
+Discriminação do Naive Bayes + Isotonic = -0.052
+[0.58066343 0.8530987 ]
+Discriminação do Naive Bayes + Sigmoid = -0.415
+[0.54708738 0.47258352]
+Discriminação do Decision Tree Classifier = +0.099
+[0.83414239 0.68834481]
+
+\begin{table}
+    \centering
+    \caption{Dataset de Reincidência Criminal sem pré-processamento.}
+    \subcaption{Acurácia por classe (positiva e negativa)}
+    \label{table:recindSemPP}
+    \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{lrrrrrrrl}
+    \toprule
+   Algoritmo de Classificação   &  Acurácia sem pré-processamento &  Acurácia após o massageamento & Acurácia após a amostragem preferencial  \\
+   
+    \midrule
+    Árvore de decisão            &        [0.78050162 0.76562102] &   [0.78462783 0.67686815]   &    [0.83414239 0.68834481]  \\
+    Regressão Logística          &       [0.777589   0.76358072] &   [0.7316343  0.62764601]   &     [0.76990291 0.66794185]  \\
+    Naive Bayes                 &        [0.9342233 0.4310125] &   [0.95040453 0.30986993]   &      [0.94514563 0.43279776]        \\
+    Naive Bayes + Isotônico     &         [0.74991909 0.80158123] &  [0.7973301  0.69752614]   &     [0.58066343 0.8530987 ] \\
+    Naive Bayes + Sigmoidal     &        [0.87928803 0.6062229 ] &   [0.92475728 0.39989799]  &    [0.54708738 0.47258352] \\
+        
+    \bottomrule
+    \end{tabular}
+    }
+    \end{table}

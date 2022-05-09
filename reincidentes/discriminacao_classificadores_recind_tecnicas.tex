@@ -1,0 +1,14 @@
+\begin{table}
+    \centering
+    \caption{Discriminação de cada classificador obtido no UCI GermanCredit Data Set.}
+    \label{Discriminação Conjunto bruto 6}
+    \begin{tabular}{lrrrrr}
+    \toprule
+    Técnica & Regressão Logística &  Naive Bayes &  Naive Bayes + Isotônico &  Naive Bayes + Sigmoidal &  Árvore de Decisão \\
+    \midrule
+    Sem pré-processamento   &    0.128 &        0.291 &                   0.078 &                  0.095 &                     0.078 \\
+    Massageamento    &   -0.021 &        0.005 &                  -0.026 &                 -0.016 &                    -0.036 \\
+    Amostragem Preferencial    &       -0.068 &        0.025 &                     0.0 &                 -0.005 &                     -0.13 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}

@@ -1,0 +1,21 @@
+\begin{table}
+    \centering
+    \caption{Acurácia por grupo dos classificadores no GermanCredit Data Set.}
+    \label{table:grupoGermanCompleto}
+    \begin{tabular}{llrrrrr}
+    \toprule
+    Classificador           &  Grupo        &  Acurácia sem pré-processamento    &  Acurácia após o massageamento  &  Acurácia após a amostragem preferencial  \\    
+    \midrule
+    Árvore de Decisão       &  Desfavorecido &   0.604403 (0.073387)           &  0.360704 (0.092519)            & 0.661978 (0.074681)   \\
+    Árvore de Decisão       &     Favorecido &    0.642173 (0.039120)          &  0.726517 (0.044491)           &  0.656515 (0.039973)      \\    
+    Naive Bayes              &  Desfavorecido &   0.719433 (0.071507)           &  0.351127 (0.079247)           &  0.596850 (0.111544)   \\
+    Naive Bayes              &     Favorecido &    0.699540 (0.067421)        &  0.724879 (0.035959)             &  0.697902 (0.064544)   \\
+    Naive Bayes + Isotônico   &  Desfavorecido &   0.729774 (0.067912)        &  0.351127 (0.082130)              &  0.550610 (0.067619)   \\
+    Naive Bayes + Isotônico   &     Favorecido &    0.706032 (0.074737)        &  0.730733 (0.031506)            &  0.683302 (0.066501)    \\
+    Naive Bayes + Sigmoidal    &  Desfavorecido &    0.720635 (0.077010)       &  0.351127 (0.082130)                 & 0.520050 (0.078105)     \\
+    Naive Bayes + Sigmoidal    &     Favorecido &    0.704203 (0.064432)         &  0.721951 (0.039477)              &   0.718187 (0.074979)      \\
+    Regressão Logística        &  Desfavorecido &    0.699498 (0.083140)         &  0.351127 (0.082130)             &  0.758014 (0.054572)      \\
+    Regressão Logística        &     Favorecido &   0.712615 (0.059972)         &  0.727851 (0.039004)              &  0.691783 (0.061569)      \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
